@@ -38,7 +38,7 @@ function toggleTheme() {
 
 // ---------------------------------------------function THEME CHANGES---------------------------------------------
 function theme1() {
-    document.body.style.backgroundImage = "url(Images/gamingwinter.jpg)";
+    document.body.style.backgroundImage = "url(Images/Xmas1.jpg)";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundSize = "cover";
