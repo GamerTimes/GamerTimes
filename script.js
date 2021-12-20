@@ -1,12 +1,12 @@
   // ---------------------------------------------function THEME CHANGER---------------------------------------------
  
- // function to set a given theme/color-scheme
+
  function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
 }
 
-// function to toggle between light and dark theme
+
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
@@ -21,7 +21,7 @@ function toggleTheme() {
     }
 }
 
-// Immediately invoked function to set the theme on initial load
+
 (function () {
     if (localStorage.getItem('backgroundImage') === '2') {
         setTheme('theme-dark');
@@ -65,10 +65,10 @@ function keep(){
 
 // ---------------------------------------------function scroll up with animation---------------------------------------------
 function fromthetop(){
-//Get the button
+
 var mybutton = document.getElementById("myBtn");
 mybutton.style.display = "none";
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -82,7 +82,7 @@ function scrollFunction() {
 }
 
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'}) 
 
