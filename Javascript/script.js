@@ -25,6 +25,52 @@ function topFunctionhistory() {
   window.scrollTo({top: 627, behavior: 'smooth'}) 
   }
 // ------------------------------------------------------------------------------------------------------------------
+function Feedback(){
+  window.open("Feedback.html", "_blank", "toolbar=no,scrollbars=no,resizable=yes,top=500,left=400,right=400,width=700,height=600");
+}
+function requiredElement() {
+  var Feedback = document.getElementById("Feedback").value;
+
+  if(Feedback == "") {
+  alert("Please give us Feedback");
+  document.getElementById("Feedback").style.backgroundColor="rgb(255, 130, 130)";
+  document.getElementById("Feedback").focus();
+  return false;
+  }
+}
+
+function nameValidate() { 
+
+  var letters = /^[A-Za-z]+$/;
+  var name = document.getElementById("name");
+  if(name.value.match(letters)) {
+  document.getElementById("name").style.backgroundColor="white";
+  return true;
+  } else {
+  alert('The name can only contain letters');
+  document.getElementById("name").style.backgroundColor="rgb(255, 130, 130)";
+  document.getElementById("name").focus();
+  return false;
+  }
+}
+function validateEmail(Textarea){
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(Textarea.value.match(mailformat)){
+  document.form.email.focus();
+  document.getElementById("email").style.backgroundColor="white";
+  return true;
+  }else{
+  alert("Please only write a valid email");
+  document.getElementById("email").style.backgroundColor="rgb(255, 130, 130)";
+  document.form.email.focus();
+  return false;
+  }
+}
+
+function validateForm(){
+  alert("Thanks for your help");
+  window.close();
+}
 
 
 
