@@ -16,7 +16,7 @@
             <br><br><br><br>
             <tr>
                 <td style="width:300px" >Name: <br><br></td>
-                <td><input type="text" name="name" id="name" placeholder="Your full name" onblur="nameValidate()"/><br><br></td>
+                <td><input type="text" name="name" id="name" style="border: 2px solid rgb(99, 91, 91);border-radius: 10px;" placeholder="Your full name" onblur="nameValidate()"/><br><br></td>
             </tr>
 
             <tr>
@@ -28,7 +28,7 @@
 
             <tr>
                 <td>Email: <br><br></td>
-                <td><input type="text" name = "email" id="email" placeholder="Your email" onblur="validateEmail()"/><br><br></td>
+                <td><input type="text" name = "email" id="email" style="border: 2px solid rgb(99, 91, 91);border-radius: 10px;" placeholder="Your email" onblur="validateEmail()"/><br><br></td>
             </tr>
 
             <tr>
@@ -37,7 +37,7 @@
 
             <tr>
                 <td>Feedback: <br><br></td>
-                <td><textarea name="Feedback" id="Feedback" placeholder="       Your Feedback..." cols="40" rows="5" onblur="requiredElement()"></textarea><br><br></td>
+                <td><textarea name="Feedback" id="Feedback" style="border: 2px solid rgb(99, 91, 91);border-radius: 10px;" placeholder="       Your Feedback..." cols="40" rows="5" onblur="requiredElement()"></textarea><br><br></td>
             </tr> 
             <tr>
                 <td style="color: red;"><p id="Feedbackerror"></p></td>
@@ -46,7 +46,7 @@
         </table>
 
             <button type="submit" class="button1"onclick ="validateForm()">Submit</button>
-            <button type="reset" class="button2">Cancel</button>
+            <button type="reset" class="button2" onclick="document.location.reload(true)">Cancel</button>
     </form>
 </body>
 </html>
