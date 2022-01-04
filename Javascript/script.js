@@ -79,9 +79,16 @@ function validateEmail(){
 }
 
 function validateForm(){
-  alert("Thanks for your help");
-  window.close();
+  var Feedback = document.getElementById("Feedback").value;
+
+  if(Feedback == ""){
+    document.getElementById("Feedbackerror").innerHTML="Please give us your feedback";  
+  }else{
+    alert("Thanks for your help");
+    window.close();
+  }
 }
+
 
 
 
